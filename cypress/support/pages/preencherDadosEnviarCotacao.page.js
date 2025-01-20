@@ -19,16 +19,16 @@ Cypress.Commands.add('preencherDadosEviarCotacao', () =>{
 
 })
 
-// Cypress.Commands.add('preencherDadosEviarCotacaoIncorretos', () =>{
-//     cy.get(INPUT_EMAIL).type('joyce.gabi1313@gmail.com')
-//     cy.get(INPUT_CELULAR).type('81999999999')
-//     cy.get(INPUT_NOME_USUARIO).type('Joyce')
-//     cy.get(INPUT_SENHA).type(Cypress.env('senha'))
-//     cy.get(INPUT_CONFIRME_SENHA).type('12345')
-//     cy.get(INPUT_COMENTARIOS).type('Teste')
+Cypress.Commands.add('preencherDadosEviarCotacaoIncorretos', () =>{
+    cy.get(INPUT_EMAIL).type('joyce.gabi1313@gmail.com')
+    cy.get(INPUT_CELULAR).type('81999999999')
+    cy.get(INPUT_NOME_USUARIO).type('Joyce')
+    cy.get(INPUT_SENHA).type(Cypress.env('senha'))
+    cy.get(INPUT_CONFIRME_SENHA).type('12345')
+    cy.get(INPUT_COMENTARIOS).type('Teste')
 
 
-// })
+})
 
 Cypress.Commands.add('selecionarBotaoEnviarCotacao', () =>{
     cy.get(BTN_ENVIAR).should('be.visible').click()

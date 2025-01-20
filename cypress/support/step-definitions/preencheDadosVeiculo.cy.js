@@ -42,7 +42,7 @@ And('preencho os campos obrigatorio incorretos da aba Send Quote', () =>{
     cy.preencherDadosEviarCotacaoIncorretos()
 })
 
-And('clico no butão de Enviar cotação da aba Send Quote', () =>{
+Then('clico no butão de Enviar cotação da aba Send Quote', () =>{
     cy.selecionarBotaoEnviarCotacao()
 })
 
